@@ -22,7 +22,6 @@ public class SubFamiliaEquipos implements Serializable {
     private String nombre;
     @Column
     private String descripcion;
-    @Column
     @ManyToOne
     private Set<FamiliaEquipo> familiaEquipo;
 }
