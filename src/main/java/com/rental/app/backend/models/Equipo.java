@@ -29,7 +29,7 @@ public class Equipo implements Serializable {
     @ManyToMany
     private Set<Alquiler> listaDeAlquileres;
     @ManyToOne(fetch = FetchType.LAZY)
-    private SubFamiliaEquipos subFamiliaDeEquipos;
+    private SubFamiliaEquipo subFamiliaDeEquipos;
 
     public int aumentarExistencia(){
         return 0;

@@ -13,7 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Entity
 @Table(name = "sub_familia_equipo")
-public class SubFamiliaEquipos implements Serializable {
+public class SubFamiliaEquipo implements Serializable {
     @Id
     @GeneratedValue
     private long id;

@@ -20,6 +20,6 @@ public class FamiliaEquipo implements Serializable {
     private String nombre;
     private String descripcion;
     @OneToMany(mappedBy = "familiaEquipo", cascade = CascadeType.ALL)
-    private Set<SubFamiliaEquipos> listaSubFamilias;
+    private Set<SubFamiliaEquipo> listaSubFamilias;
 
 }
