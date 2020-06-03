@@ -18,7 +18,7 @@ public class Alquiler implements Serializable {
     @Id
     @GeneratedValue
     private long id;
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne(fetch = FetchType.LAZY)
     private Cliente cliente;
     private Estado estado;
     @Column(name = "fecha_alquiler")
@@ -27,7 +27,8 @@ public class Alquiler implements Serializable {
     private Date fechaDevolucionEsperada;
     @Column(name = "fecha_devolucion_real")
     private Date fechaDevolcionReal;
-    @ManyToMany(mappedBy = "alquiler", cascade = CascadeType.REMOVE)
+    //En relación ManyToMany el mappedBy puede venir de cualquier extremo de la relación.
+    @ManyToMany(mappedBy = "listaDeAlquileres", cascade = CascadeType.REMOVE)
     private Set<Equipo> listaDeEquiposRentados;
     @Column(name = "foto_perfil")
     private String fotoDePerfil;

@@ -19,7 +19,7 @@ public class FamiliaEquipo implements Serializable {
     private long id;
     private String nombre;
     private String descripcion;
-    @OneToMany(mappedBy = "familia", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "familiaEquipo", cascade = CascadeType.ALL)
     private Set<SubFamiliaEquipos> listaSubFamilias;
 
 }

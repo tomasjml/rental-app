@@ -19,9 +19,8 @@ public class SubFamiliaEquipos implements Serializable {
     private long id;
     private String nombre;
     private String descripcion;
-    @Column(name = "familia_equipo")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private FamiliaEquipo familiaEquipo;
-    @OneToMany(mappedBy = "sub_familia", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "subFamiliaDeEquipos", cascade = CascadeType.ALL)
     private Set<Equipo> listaEquipos;
 }

@@ -21,6 +21,6 @@ public class Cliente implements Serializable {
     private String cedula;
     @Column(name = "foto_perfil")
     private String fotoDePeril;
-    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private Set<Alquiler> misAlquileres;
 }
