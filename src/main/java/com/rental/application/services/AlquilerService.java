@@ -1,6 +1,6 @@
-package com.rental.app.backend.services;
+package com.rental.application.services;
 
-import com.rental.app.backend.repositories.AlquilerRepository;
+import com.rental.application.repositories.AlquilerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

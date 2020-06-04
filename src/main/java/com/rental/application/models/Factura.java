@@ -1,4 +1,4 @@
-package com.rental.app.backend.models;
+package com.rental.application.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

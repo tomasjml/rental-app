@@ -1,6 +1,6 @@
-package com.rental.app.backend.repositories;
+package com.rental.application.repositories;
 
-import com.rental.app.backend.models.Cliente;
+import com.rental.application.models.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ClienteRepository extends JpaRepository<Cliente,Long> {

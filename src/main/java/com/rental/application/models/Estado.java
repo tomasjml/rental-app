@@ -1,4 +1,4 @@
-package com.rental.app.backend.models;
+package com.rental.application.models;
 
 public enum Estado {
     RENTADO,

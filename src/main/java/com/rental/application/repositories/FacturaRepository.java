@@ -1,6 +1,6 @@
-package com.rental.app.backend.repositories;
+package com.rental.application.repositories;
 
-import com.rental.app.backend.models.Factura;
+import com.rental.application.models.Factura;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface FacturaRepository extends JpaRepository<Factura, Long> {

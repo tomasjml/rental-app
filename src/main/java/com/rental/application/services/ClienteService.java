@@ -1,6 +1,6 @@
-package com.rental.app.backend.services;
+package com.rental.application.services;
 
-import com.rental.app.backend.repositories.ClienteRepository;
+import com.rental.application.repositories.ClienteRepository;
 import org.springframework.stereotype.Service;
 
 @Service
